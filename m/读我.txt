@@ -65,6 +65,25 @@ git checkout -b featrue-logout    上面也有登录功能
 
 
 
+第五组：
+退出登录已经完成，测试
+git add -A
+git commit -m "退出登录完成"
+git checkout developer
+git merge featrue-logout
+
+git push origin developer   上传让测试下
+
+没有bug了
+git checkout master
+git merge developer   这是代码又回到master上了
+
+
+
+
+
+
+
 
 
 
