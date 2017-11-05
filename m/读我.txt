@@ -1,8 +1,56 @@
 记录git操作
 
+web写完了登陆操作
 第一组：
 git status
 //git branch featrue-login 表示在master上新建一个featrue-login分支
 git checkout -b featrue-login	如果没有-b表示切换分支，有-b的话是先创建一个featrue-login，然后再切换
 git status
 git add -A  只有add后才会真正属于哪个分支
+git commit -m "完成了登陆功能"
+
+我们希望partner扮演另一个合作者协同开发
+所在在partner下打开进行操作
+git checkout -b featrue-login  切换到这个分支
+
+回到web中打开git
+在这把featrue-login放到github上
+git push origin featrue-login
+完整写法：git push origin featrue-login:featrue-login	
+冒号前面的featrue-login是指将我自己电脑上的featrue-login上传到GitHub上，叫什么名字呢？
+冒号后面的featrue-login就是自定义名字
+
+
+回到partner打开git
+现在要从GitHub上把featrue-login分支 往下拉
+git pull origin featrue-login
+
+显示的 一个+号代表加了一行，一个-号代表删了一行
+这时的partner就拥有了登陆功能
+
+
+第二组：
+现在partner去做验证登陆功能(还在是partner上的git)
+git checkout master	切换分支，到master分支，其分支没有（原来页面上增加的自动消失了，说明分支的切换，之前web是在featrue-login分支下写的登陆代码）
+
+因为没有，我们要进行合并
+git merge featrue-login
+此时登陆代码就再次出现
+
+
+第三组：
+现在验证登陆已经做完，在web的git的featrue-login下
+git status
+git add -A
+git commit -m "完成了登陆功能（模块化处理）"
+
+
+
+
+
+
+
+
+
+
+

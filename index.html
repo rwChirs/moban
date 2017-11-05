@@ -134,13 +134,27 @@
         </div>
     </div>
     
-    <script src="/public/assets/jquery/jquery.min.js"></script>
+    <!-- 引入模块加载器 -->
+    <script src="/public/js/require.js"></script>
+
+    <!-- 引入jquery公共类 -->
+    <script src="/public/js/config.js"></script>
+
+<!--     <script src="/public/assets/jquery/jquery.min.js"></script>
     <script src="/public/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="/public/assets/nprogress/nprogress.js"></script>
     <script src="/public/assets/echarts/echarts.min.js"></script>
-    <script src="/public/js/common.js"></script>
+    <script src="/public/js/common.js"></script> -->
+
+
+    
     <script>
-        
+
+        // 引入index
+        require(['src/index']);
+
+
+
         /*
         //测试
         $.ajax({
@@ -157,7 +171,7 @@
 
 
 
-
+/*
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('main'));
 
@@ -183,7 +197,7 @@
 
         // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
-
+*/
     </script>
 </body>
 </html>
