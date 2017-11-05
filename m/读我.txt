@@ -47,9 +47,21 @@ git push origin featrue-login  上传，其他开发者继续pull就可以了
 
 
 第四组：
-现在要做退出登录，应该建一个新的分支，应该回到master
+现在要做退出登录，应该建一个新的分支，详细看分支策略，应该回到master
 git checkout master
 
+测试分支
+git checkout -b developer
+
+git merge featrue-login  让developer拥有featrue-login 功能
+
+git push origin developer
+
+git checkout master
+git merge developer  这时候master上面就有完整的登录代码
+
+创建新功能分支（新开发的功能可能会有bug，先到测试分支去测，没有bug再拿回来合并）
+git checkout -b featrue-logout    上面也有登录功能
 
 
 
