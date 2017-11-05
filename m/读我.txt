@@ -43,6 +43,14 @@ git merge featrue-login
 git status
 git add -A
 git commit -m "完成了登陆功能（模块化处理）"
+git push origin featrue-login  上传，其他开发者继续pull就可以了
+
+
+第四组：
+现在要做退出登录，应该建一个新的分支，应该回到master
+git checkout master
+
+
 
 
 
