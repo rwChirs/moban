@@ -1,0 +1,8 @@
+记录git操作
+
+第一组：
+git status
+//git branch featrue-login 表示在master上新建一个featrue-login分支
+git checkout -b featrue-login	如果没有-b表示切换分支，有-b的话是先创建一个featrue-login，然后再切换
+git status
+git add -A  只有add后才会真正属于哪个分支
