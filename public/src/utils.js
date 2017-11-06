@@ -26,7 +26,7 @@ define(['jquery'], function($) { //指定依赖写数组,这个指的是jquery�
                   type: 'get',
                   success: function(info) {
                         if(info.success) {
-                              location.href = './login.html';
+                              location.href = '/login.html';
                         }
                   }
             })
