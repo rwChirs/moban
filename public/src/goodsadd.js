@@ -1,6 +1,9 @@
 
 
-define(['jquery', 'template', './utils', 'uploadify'], function ($, template) {
+define(['jquery', 'template', 'ckeditor', './utils', 'uploadify'], function ($, template, CKEDITOR) {
+
+      // console.log(CKEDITOR);
+      CKEDITOR.replace('ck');
 
       // 表单提交
       $('form').on('submit', function() {
@@ -8,7 +11,7 @@ define(['jquery', 'template', './utils', 'uploadify'], function ($, template) {
             var _this = $(this);
 
             $.ajax({
-                  url: '/api/product/updateProduct',
+                  url: '/api/product/addProduct',
                   type: 'post',
                   data: _this.serialize(),
                   success: function(info) {

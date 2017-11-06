@@ -17,7 +17,7 @@ define(['jquery'], function($) { //指定依赖写数组,这个指的是jquery�
                     location.href = '/login.html';
                 }
             }
-      })
+      });
 
       // 退出登录
       $('.logout').on('click', function() {
@@ -31,6 +31,11 @@ define(['jquery'], function($) { //指定依赖写数组,这个指的是jquery�
                   }
             })
 
+      })
+
+
+      $('.navs a + ul').prev().on('click', function() {
+        $(this).next().slideToggle();
       })
 
 })
