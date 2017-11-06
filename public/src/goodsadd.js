@@ -15,7 +15,7 @@ define(['jquery', 'template', 'ckeditor', './utils', 'uploadify'], function ($, 
                   type: 'post',
                   data: _this.serialize(),
                   success: function(info) {
-                        console.log(info);
+                        // console.log(info);
 
                         if(info.success) {
                               location.href = '/goods_list.php';
@@ -45,7 +45,7 @@ define(['jquery', 'template', 'ckeditor', './utils', 'uploadify'], function ($, 
             // 文件上传地址
             uploader: '/api/product/addProductPic',
             onUploadSuccess: function (file, data) {
-                  console.log(data);
+                  // console.log(data);
                   var res = JSON.parse(data);
 
                   // 实现预览图片效果
@@ -64,10 +64,12 @@ define(['jquery', 'template', 'ckeditor', './utils', 'uploadify'], function ($, 
             type: 'get',
             data: {page: 1, pageSize: 100},
             success: function (info) {
-                  console.log(info);
+                  // console.log(info);
 
+                  // 调用模板引擎
                   var html = template('brands', info);
 
+                  // 添加到DOM中
                   $('.brand').append(html);
             }
       })

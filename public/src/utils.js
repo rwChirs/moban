@@ -10,7 +10,7 @@ define(['jquery'], function($) { //指定依赖写数组,这个指的是jquery�
             url: '/api/employee/checkRootLogin',
             type: 'get',
             success: function(info) {
-                console.log(info);
+                // console.log(info);
 
                 // 如果成功不做任何的反应，失败了跳转
                 if(info.error) {

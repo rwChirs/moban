@@ -5,7 +5,7 @@ define(['jquery'], function($) {
       $('form').on('submit', function() {
           // 缓存外部this
           var _this = $(this);
-          // 真实地址：http://localhost:3000/employee/employeeLogin
+          // /api http://localhost:3000
           $.ajax({
               url: '/api/employee/employeeLogin',
               type: 'post',

@@ -1,13 +1,14 @@
 
 
 define(['jquery', 'template'], function($, template) {
+
       // 获取用户列表
       $.ajax({
             url: '/api/user/queryUser',
             type: 'get',
             data: {page: 1, pageSize: 10},
             success: function(info) {
-                  console.log(info);
+                  // console.log(info);
 
                   var html = template('list', info);
 
@@ -18,8 +19,9 @@ define(['jquery', 'template'], function($, template) {
       // 事件委托
       $('table').on('click', '.btn', function() {
 
+            // 缓存当前点击DOM元素
             var _this = $(this);
-
+            // 获取父元素（td）
             var td = $(this).parent();
 
             var id = td.attr('data-id');
@@ -32,7 +34,7 @@ define(['jquery', 'template'], function($, template) {
 
             $.ajax({
                   url: '/api/user/updateUser',
-                  tupe: 'post',
+                  type: 'post',
                   data: {id: id, isDelete: status},
                   success: function(info) {
                         // console.log(info);

@@ -87,7 +87,7 @@
                                 </div>
                                 <div class="radio-inline">
                                     <label for="">
-                                        <input type="radio" name="statu" value="1"> 否
+                                        <input type="radio" name="statu" value="0"> 否
                                     </label>                   
                                 </div>
                             </div>

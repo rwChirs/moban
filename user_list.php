@@ -49,9 +49,7 @@
                             </tr>
                         </thead>
 
-                        <tbody>
-                            
-                        </tbody>
+                        <tbody> </tbody>
 
                     </table>
                 </div>
@@ -70,8 +68,8 @@
             {{else}}
             <td>否</td>
             {{/if}}
-            <td data-id="{{$value.id}}" data-status="{{$value.isDelect}}">
-                {{if($value.isDelect == 1)}}
+            <td data-id="{{$value.id}}" data-status="{{$value.isDelete}}">
+                {{if($value.isDelete == 1)}}
                 <a href="javascript:;" class="btn btn-info btn-xs">启 用</a>
                 {{else}}
                 <a href="javascript:;" class="btn btn-warning btn-xs">禁 用</a>

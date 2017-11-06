@@ -1,5 +1,5 @@
 
-// 模块公共配置
+// 模块公共配置(前端模板化)
 require.config({
     baseUrl: '/public',
     paths: {

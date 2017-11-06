@@ -21,8 +21,6 @@
             <?php include './common/header.html'; ?>
             
 
-
-
             <!-- 个人资料 -->
             <div class="body dashboard">
                 <div class="row survey">
@@ -73,8 +71,6 @@
 
         // 引入index
         require(['src/index']);
-
-
 
     </script>
 </body>

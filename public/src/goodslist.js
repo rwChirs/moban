@@ -5,18 +5,16 @@ define(['jquery', 'template', './utils'], function ($, template) {
       // var page = 1;
 
       // console.log(location.search);
-      
       // 利用正则匹配代码
       var reg = /\?[a-z]+=(\d+)/;
       // 处理请求参数
       var search = location.search || '';
 
       // console.log( reg.exec(search) );
-      
       // 进行匹配查找
       var page = reg.exec(search) && reg.exec(search)[1];
-      // console.log(page);
       
+      // console.log(page);
       // 设定默认页码
       page = page || 1;
 
@@ -26,7 +24,7 @@ define(['jquery', 'template', './utils'], function ($, template) {
         type: 'get',
         data: {page: page, pageSize: size},
         success: function(info) {
-            console.log(info);
+            // console.log(info);
 
             // 总的数据条数
             var total = info.total;
