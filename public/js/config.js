@@ -10,7 +10,7 @@ require.config({
         echarts: 'assets/echarts/echarts.min',
         ckeditor: 'assets/ckeditor/ckeditor'
     },
-    // 如果某个第三方的类库不支持 AMD，通过 shim可以实现类似模块的用法
+    // 如果某个第三方的类库（js插件）不支持 AMD，通过 shim可以实现类似模块的用法
     shim: {
       // 模块的特点：
       

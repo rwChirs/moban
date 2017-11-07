@@ -44,6 +44,7 @@ define(['jquery', 'template', 'ckeditor', './utils', 'uploadify'], function ($, 
             swf: '/public/assets/uploadify/uploadify.swf',
             // 文件上传地址
             uploader: '/api/product/addProductPic',
+            // 成功后接收的回调函数
             onUploadSuccess: function (file, data) {
                   // console.log(data);
                   var res = JSON.parse(data);

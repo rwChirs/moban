@@ -24,7 +24,7 @@
                         <div class="form-group">
                             <label for="" class="col-xs-3 control-label">商品封面</label>
                             <div class="col-xs-2 preview">
-
+                                <!-- 默认图片在Apache服务器上 -->
                                 <img src="/public/images/default.png">
                                 <input type="file" id="upfile">
                                 <input type="hidden" name="pic">
