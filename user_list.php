@@ -68,7 +68,7 @@
             {{else}}
             <td>否</td>
             {{/if}}
-            <td data-id="{{$value.id}}" data-status="{{$value.isDelete}}">
+            <td data-id="{{$value.id}}" data-status="{{$value.isDelete}}"> <!-- 启用禁用必须知道用户的id，遍历的时候需要把id放到DOM中，DOM也可以用来缓存数据 ，前面的属性 id，后面的属性 状态-->
                 {{if($value.isDelete == 1)}}
                 <a href="javascript:;" class="btn btn-info btn-xs">启 用</a>
                 {{else}}

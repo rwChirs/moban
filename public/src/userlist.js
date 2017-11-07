@@ -16,7 +16,7 @@ define(['jquery', 'template', './utils'], function($, template) {
             }
       })
 
-      // 事件委托
+      // 事件委托（给父元素绑定事件，子元素去触发事件）
       $('table').on('click', '.btn', function() {
 
             // 缓存当前点击DOM元素

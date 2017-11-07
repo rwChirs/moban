@@ -33,9 +33,9 @@ define(['jquery'], function($) { //指定依赖写数组,这个指的是jquery�
 
       })
 
-
+      // aside的商品一二级分类拉出或隐藏（+代表获得a后紧邻的元素ul，prev代表获取ul前面的a）
       $('.navs a + ul').prev().on('click', function() {
-        $(this).next().slideToggle();
+        $(this).next().slideToggle();//想让ul显示，所以用next
       })
 
 })

@@ -1,7 +1,9 @@
 
 // 模块公共配置(前端模板化)
 require.config({
+    // 路径不固定的处理
     baseUrl: '/public',
+    // 路径太长的处理
     paths: {
         jquery: 'assets/jquery/jquery.min',
         template: 'assets/artTemplate/template-web',
