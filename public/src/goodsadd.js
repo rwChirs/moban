@@ -5,7 +5,7 @@ define(['jquery', 'template', 'ckeditor', './utils', 'uploadify'], function ($, 
       // console.log(CKEDITOR);
       CKEDITOR.replace('ck');
 
-      // 表单提交
+      // 添加商品的表单提交
       $('form').on('submit', function() {
 
             var _this = $(this);

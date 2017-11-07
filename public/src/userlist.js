@@ -1,6 +1,6 @@
 
 
-define(['jquery', 'template'], function($, template) {
+define(['jquery', 'template', './utils'], function($, template) {
 
       // 获取用户列表
       $.ajax({
