@@ -26,16 +26,9 @@
             </form>
             <a class="search_btn" href="javascript:;">搜索</a>
         </div>
-        <div class="cz_history">
-            <div class="mui-clearfix">
-                <span class="title">搜索历史</span>
-                <span class="icon_clear fa fa-trash"> 清空记录</span>
-            </div>
-            <ul>
-                <li><a href="#">nike</a><span class="icon_delete fa fa-close"></span></li>
-                <li><a href="#">耐克</a><span class="icon_delete fa fa-close"></span></li>
-            </ul>
-        </div>
+
+        <div class="cz_history" id="history"> </div>
+
     </div>
     <footer class="cz_tabs">
         <a class="tab_home fa fa-home" href="index.html"><span>首页</span></a>
@@ -44,6 +37,28 @@
         <a class="tab_user fa fa-user" href="user/index.html"><span>会员中心</span></a>
     </footer>
 </div>
+
+<script type="text/template" id="">
+    <div class="mui-clearfix">
+        <span class="title">搜索历史</span>
+        <span class="icon_clear fa fa-trash"> 清空记录</span>
+    </div>
+    <ul>
+        {{each storage}}
+            <li>
+                <a href="#">{{$value}}</a>
+                <span data-index="{{$index}}" class="icon_delete fa fa-close"></span>
+            </li>
+        {{/each}}
+    </ul>
+</script>
 <script src="res/mui/js/mui.min.js"></script>
+
+<script src="/m/js/require.js"></script>
+<script src="/m/js/config.js"></script>
+
+<script>
+    require(['src/search']);
+</script>
 </body>
 </html>

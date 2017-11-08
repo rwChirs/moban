@@ -21,7 +21,19 @@
         <a href="index.html" class="icon_home fa fa-home"></a>
     </header>
     <div class="cz_container ">
-        <div class="mui-scroll-wrapper">
+        <div class="mui-scroll-wrapper" id="product">
+
+        </div>
+    </div>
+</div>
+<div class="p_option">
+    <a href="#" class="btn_cart fa fa-shopping-cart"></a>
+    <a href="#" class="btn_addCart">加入购物车</a>
+    <a href="#" class="btn_pay">立即购买</a>
+</div>
+
+<script type="text/template" id="productTpl">
+            
             <div class="mui-scroll">
                 <div class="cz_banner mui-slider">
                     <div class="mui-slider-group mui-slider-loop">
@@ -44,13 +56,13 @@
                     </div>
                 </div>
                 <div class="p_title">
-                    Nike耐克 男式 NIKE AIR MAX 1 PND QS复刻休闲鞋
+                    {{proName}}
                 </div>
                 <div class="p_price">
                     <span class="fold"><span>5.9</span>折</span>
                     价格：<strong class="present">¥
-                    712.00</strong>
-                    <del class="original">¥1199.0</del>
+                    {{price}}</strong>
+                    <del class="original">¥{{oldPrice}}</del>
                 </div>
                 <div class="p_size">
                     尺码：
@@ -76,14 +88,18 @@
                     <img data-lazyload="images/detail.jpg"  alt=""/>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-<div class="p_option">
-    <a href="#" class="btn_cart fa fa-shopping-cart"></a>
-    <a href="#" class="btn_addCart">加入购物车</a>
-    <a href="#" class="btn_pay">立即购买</a>
-</div>
+</script>
+
+<script src="res/mui/js/mui.min.js"></script>
+
+<script src="/m/js/require.js"></script>
+<script src="/m/js/config.js"></script>
+
+<script>
+    require(['src/product']);
+</script>
+
+<!-- 
 <script src="res/mui/js/mui.min.js"></script>
 <script src="res/mui/js/mui.lazyload.js"></script>
 <script src="res/mui/js/mui.lazyload.img.js"></script>
@@ -118,6 +134,7 @@
         });
     });
 </script>
+ -->
 
 </body>
 </html>

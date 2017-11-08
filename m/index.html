@@ -217,7 +217,17 @@
         <a class="tab_user fa fa-user" href="user/index.html"><span>会员中心</span></a>
     </footer>
 </div>
+
+
 <script src="res/mui/js/mui.min.js"></script>
+
+<script src="/m/js/require.js"></script>
+<script src="/m/js/config.js"></script>
+
+<script>
+    require(['src/user/index']);
+</script>
+
 <script>
     mui(function(){
         mui('.mui-slider').slider({

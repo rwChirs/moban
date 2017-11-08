@@ -22,15 +22,18 @@
     <div class="cz_container">
         <div class="form_box">
             <div class="mui-input-row">
-                <input name="delivery" type="text" placeholder="收货人">
+                <input name="recipients" type="text" placeholder="收货人">
             </div>
             <div class="mui-input-row">
                 <input name="postCode" type="text" placeholder="邮编">
             </div>
             <div class="mui-input-row">
-                <textarea name="address" id="textarea" rows="5" placeholder="多行文本框"></textarea>
+                <input name="address" type="text" placeholder="省市县">
             </div>
-            <a href="index.html" class="mui-btn mui-btn-primary btn_login">确认</a>
+            <div class="mui-input-row">
+                <textarea name="addressDetail" id="textarea" rows="5" placeholder="多行文本框"></textarea>
+            </div>
+            <input type="submit" class="mui-btn mui-btn-primary btn_login" value="确定">
         </div>
     </div>
     <footer class="cz_tabs">
@@ -41,5 +44,12 @@
     </footer>
 </div>
 <script src="../res/mui/js/mui.min.js"></script>
+
+<script src="/m/js/require.js"></script>
+<script src="/m/js/config.js"></script>
+
+<script>
+    require(['src/user/manage']);
+</script>
 </body>
 </html>
